@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .background(Color("TextBackground"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
     }
 }
